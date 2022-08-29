@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <script>
+
+    alert( true && true );   // true
+    alert( false && true );  // false
+    alert( true && false );  // false
+    alert(false && false); // false
+
+    let hour = 12;
+    let minute = 30;
+
+    if (hour == 12 && minute == 30) {
+     alert( '현재 시각은 12시 30분입니다.' );
+        }
+
+    // 첫 번째 피연산자가 truthy이면,
+    // AND는 두 번째 피연산자를 반환합니다.
+    alert( 1 && 0 ); // 0
+    alert( 1 && 5 ); // 5
+
+    // 첫 번째 피연산자가 falsy이면,
+    // AND는 첫 번째 피연산자를 반환하고, 두 번째 피연산자는 무시합니다.
+    alert( null && 5 ); // null
+    alert( 0 && "아무거나 와도 상관없습니다." ); // 0
+
+    </script>
+</body>
+</html>
