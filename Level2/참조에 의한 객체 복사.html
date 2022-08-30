@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <script>
+
+        let user = { name: "John" };
+        let permission1 = { canView = true };
+        let permission2 = { canEdit = true };
+
+        Object.assign(user, permission1, permission2);
+
+        alert(user.permission1);
+        
+
+
+        let message = {
+            name: "John",
+            age: 30
+        };
+       let phrase = message.name;
+
+        alert(phrase);
+
+        message.name = "LeeDongGuk";
+
+        alert(phrase);
+
+        let a = {};
+        let b = a;
+
+        alert(a == b);
+        alert(a === b);
+
+        let clone = {};
+
+        for (let key in message) {
+            clone[key] = message[key];
+            alert(clone[key]);
+        }
+
+    </script>
+</body>
+</html>
