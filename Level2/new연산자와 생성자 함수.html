@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <script>
+
+        /**
+
+        function User(name) {
+            this.name = name;
+            this.isAdmin = false;
+        }
+
+        let user = new User("보리");
+
+        alert(user.name);
+        alert(user.isAdmin);
+        */
+
+        /**
+        let user = new function () {
+
+            this.name = "John";
+            this.isAdmin = false;
+
+        };
+
+        function User() {
+            alert(new.target);
+        }
+
+        new User();
+        */
+
+        function BigUser() {
+
+            this.name = "원숭이";
+
+            return { name: "고릴라" };
+
+        }
+
+        alert(new BigUser().name);
+
+        function SmallUser() {
+            this.name = "원숭이";
+            return;
+        }
+
+        alert(new SmallUser().name);
+
+        function User(name) {
+            this.name = name;
+            this.sayHi = function () {
+                alert("제 이름은 " + this.name + "입니다.");
+            };
+        }
+
+        let bora = new User("이보리");
+        bora.sayHi();
+
+    </script>
+</body>
+</html>
