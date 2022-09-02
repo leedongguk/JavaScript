@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript Study</title>
+</head>
+<body>
+    <script>
+
+        function openWin() {
+            newWindow = window.open("", "새 창", "width=250, height=80, left=230, top=100");
+            newWindow.document.write("<p>새창이 열렸습니다.</p>");
+        }
+
+        function resizeWin() {
+            newWindow.resizeTo(300, 300);
+            newWindow.focus();
+        }
+
+    </script>
+
+    <button onclick="openWin()">새 창 열기</button>
+    <button onclick="resizeWin()">창 크키 조절하기</button>
+</body>
+</html>
